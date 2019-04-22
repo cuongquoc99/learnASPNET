@@ -1,0 +1,59 @@
+﻿@model IEnumerable<WebApplication3.SoDauBai>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Sổ đầu bài</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Ngày
+        </th>
+        <th>
+            Nội Dung
+        </th>
+        <th>
+            Giảng Viên
+        </th>
+        <th>
+            Nhận Xét
+        </th>
+        <th>
+            Đề Xuất
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.Ngay.ToString("dd/MM/yyyy")
+            </td>
+            <td>
+                <mark>@item.NoiDung</mark>
+            </td>
+            <td>
+                <a>href="#">@item.GiangVien</a>
+            </td>
+            <td>
+                <mark>@item.NhanXet</mark>
+            </td>
+            <td>
+                @item.DeXuat
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.id }) |
+                <a> href="@Url.Action("Details", new { id = item.id })">Details</a>
+                @Html.ActionLink("Delete", "Delete", new { id = item.id })
+            </td>
+        </tr>
+    }
+
+</table>

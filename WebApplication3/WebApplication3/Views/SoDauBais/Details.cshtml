@@ -1,0 +1,113 @@
+﻿@model WebApplication3.SoDauBai
+@*CSDl tạo trong WebApplication 3 (Lần sau tạo thẳng trong mục Models)*@
+
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SoDauBai</h4>
+    <hr />
+    @*<dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Ngay)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Ngay)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.NoiDung)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.NoiDung)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.GiangVien)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.GiangVien)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.NhanXet)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.NhanXet)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.DeXuat)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.DeXuat)
+            </dd>
+
+        </dl>*@
+    <table border="1px" width="400px" height="200px">
+        <tr>
+            <td>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Ngay)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Ngay)
+                </dd>
+            </td>
+            <td width="150px" align="center">
+                <dt>
+                    @Html.DisplayNameFor(model => model.NoiDung)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.NoiDung)
+                </dd>
+            </td>
+            <td width="150px" align="center">
+                <dt>
+                    @Html.DisplayNameFor(model => model.NhanXet)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.NhanXet)
+                </dd>
+            </td>
+            <td rowspan="2">Ký Tên</td>
+        </tr>
+        <tr>
+            <td>
+                <dt>
+                    @Html.DisplayNameFor(model => model.GiangVien)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.GiangVien)
+                </dd>
+            </td>
+            <td colspan="2">
+                <dt>
+                    @Html.DisplayNameFor(model => model.DeXuat)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.DeXuat)
+                </dd>
+            </td>
+        </tr>
+
+    </table>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

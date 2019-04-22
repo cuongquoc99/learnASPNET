@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  /* margin : create space around elements, outside of any defined borders */
+  padding: 0;
+  /* padding : đường viền. */
+}
+
+body {
+  font: 16px Helvetica, Sans-Serif;
+  line-height: 24px;
+  background-image: url("Background.jpg")
+}
+
+.clear {
+  clear: both;
+  /*ngăn chặn sự chiếm vùng không gian của body */
+}
+
+#page-wrap {
+  width: 800px;
+  margin: 40px auto 60px;
+  /* top 40px-right and left auto-bottom */
+}
+
+#pic {
+  float: right;
+  margin: 40px -30px 0 0;
+  padding: 10px 20px;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  /* top-right-bottom-left */
+  margin-left: 51px;
+  display: block;
+}
+
+h1 {
+  margin: 0 0 16px 0;
+  padding: 0 0 16px 0;
+  font-size: 40px;
+  letter-spacing: -2px;
+  /* CSS letter-spacing Property */
+  border-bottom: 1px solid #999;
+  /*Css border*/
+}
+
+h2 {
+  font-size: 18px;
+  margin: 0 0 6px 0;
+  position: relative;
+}
+
+h2 span {
+  position: : relative;
+  font-style: italic;
+  font-family: Georgia;
+  font-size: 15px;
+  color: #999;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0 0 32px 17px;
+}
+
+#Mục-tiêu {
+  width: 500px;
+  float: left;
+  font-family: sans-serif;
+  margin-top: 19px;
+}
+
+/* top-right-bottom-left */
+dt {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: right;
+  padding: 0 26px 0 0;
+  width: 150px;
+  float: left;
+  height: 100px;
+  /* border-right: 1px  solid #999; */
+}
+
+dd {
+  width: 600px;
+  float: right;
+  border-left: 1px solid gray;
+  padding-left: px;
+  padding-left: 8px;
+}
+
+dd.clear {
+  float: none;
+  margin: 0;
+  height: 15px;
+  border: none;
+}
+
+dl {
+  padding-left: 15px;
+  line-height: 25px;
+}
+
+p {
+  width: 575px;
+}
